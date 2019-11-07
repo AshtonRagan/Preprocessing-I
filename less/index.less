@@ -155,6 +155,7 @@ nav {
     color: black;
   }
 }
+
 .s1 {
   display: flex;
   .borders();
@@ -162,14 +163,28 @@ nav {
   background-size: cover;
   .alignColor();
   margin: auto 5%;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+  } //media ends
+
   h1 {
     margin: auto 5%;
     text-align: center;
     font-size: 65px;
+
+    @media (max-width: 500px) {
+      font-size: 15%;
+    }
   }
   div {
     width: 30%;
     margin: auto 0%;
+    @media (max-width: 500px) {
+      width: 100%;
+      margin: 2% 0%;
+    }
     p {
       font-size: 30px;
       line-height: 45px;
@@ -182,12 +197,17 @@ nav {
     align-items: center;
     a {
       font-size: 45px;
-
       .alignColor();
     }
     .btn {
       font-size: 30px;
       width: 100%;
+
+      @media (max-width: 500px) {
+        margin: 2% 0%;
+        width: 90%;
+        padding: 0% 5%;
+      }
     }
   }
   .img1 {
@@ -196,12 +216,23 @@ nav {
     width: 30%;
     margin: 5%;
 
+    @media (max-width: 500px) {
+      width: 80%;
+      align-items: center;
+    } //media ending
+
     img {
       .borders();
       width: 100%;
     }
   }
+  a {
+    @media (max-width: 500px) {
+      margin: 3%;
+    }
+  }
 }
+
 .s2 {
   background-color: #464779;
   display: flex;
@@ -209,16 +240,30 @@ nav {
   .borders();
   text-align: center;
   margin: 0% 5%;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .skills {
     padding: 3%;
 
     width: 33%;
+    @media (max-width: 500px) {
+      width: 95%;
+    }
     h1 {
       font-size: 25px;
+      @media (max-width: 500px) {
+        font-size: 50px;
+      }
     }
     ul {
       background-color: #92356e;
       border: 2px solid black;
+      @media (max-width: 500px) {
+        font-size: 25px;
+      }
     }
     li {
       margin: 2%;
@@ -227,21 +272,32 @@ nav {
   .table {
     width: 100%;
     height: 100%;
-
+    @media (max-width: 500px) {
+      width: 90%;
+      margin: auto;
+    }
     h1 {
       font-size: 40px;
     }
     table {
       background-color: #92356e;
       border-spacing: 10px;
-      width: 100%;
+      width: 90%;
       .borders();
+      @media (max-width: 500px) {
+        margin: 0 auto;
+        width: 100%;
+      }
     }
     tr,
     td {
       font-size: 25px;
       height: 45px;
       .borders();
+
+      @media (max-width: 500px) {
+        font-size: 20px;
+      }
     }
   }
 }
