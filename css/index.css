@@ -142,11 +142,16 @@ nav {
 nav a {
   width: 10%;
   text-align: center;
+  color: black;
 }
 .s1 {
   display: flex;
-  background-color: gray;
-  margin: 0% 5%;
+  border: 3px solid black;
+  background-image: url("../images/pasion.jpg");
+  background-size: cover;
+  color: lightcyan;
+  text-align: center;
+  margin: auto 5%;
 }
 .s1 h1 {
   margin: auto 5%;
@@ -159,6 +164,18 @@ nav a {
 }
 .s1 div p {
   font-size: 30px;
+  line-height: 45px;
+}
+.s1 .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.s1 .name a {
+  font-size: 45px;
+  color: lightcyan;
+  text-align: center;
 }
 .s1 .name .btn {
   font-size: 30px;
@@ -171,12 +188,47 @@ nav a {
   margin: 5%;
 }
 .s1 .img1 img {
+  border: 3px solid black;
   width: 100%;
 }
 .s2 {
-  background-color: lightblue;
+  background-color: #464779;
+  display: flex;
+  align-items: center;
+  border: 3px solid black;
+  text-align: center;
   margin: 0% 5%;
 }
-.s2 li {
+.s2 .skills {
+  padding: 3%;
+  width: 33%;
+}
+.s2 .skills h1 {
+  font-size: 25px;
+}
+.s2 .skills ul {
+  background-color: #92356e;
+  border: 2px solid black;
+}
+.s2 .skills li {
   margin: 2%;
+}
+.s2 .table {
+  width: 100%;
+  height: 100%;
+}
+.s2 .table h1 {
+  font-size: 40px;
+}
+.s2 .table table {
+  background-color: #92356e;
+  border-spacing: 10px;
+  width: 100%;
+  border: 3px solid black;
+}
+.s2 .table tr,
+.s2 .table td {
+  font-size: 25px;
+  height: 45px;
+  border: 3px solid black;
 }
